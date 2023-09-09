@@ -1,0 +1,34 @@
+# Ignore Node.js modules and dependencies
+node_modules
+
+# Ignore log files and other generated files
+*.log
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.DS_Store
+
+# Ignore development and build files
+src/
+tests/
+.env
+.babelrc
+.eslintignore
+.eslintrc.js
+.npmrc
+.nycrc
+.prettierignore
+.prettierrc
+.vscode/
+
+# Ignore Git-related files
+.git
+.gitignore
+
+# Ignore Docker-specific files
+Dockerfile
+.dockerignore
+
+# Ignore PostgreSQL data directory (if applicable)
+# You may need to adjust this based on your setup
+/data/
