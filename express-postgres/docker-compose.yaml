@@ -11,10 +11,10 @@ services:
   volumes:
    - './data:/var/lib/postgresql/data'
 
-app: 
- build:
-  context: .
- ports:
-  - '3000:3000'
-depends_on:
-  - postgres
+ app: 
+  build:
+   context: .
+  ports:
+   - '3000:3000'
+  depends_on:
+   - postgres
