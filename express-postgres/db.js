@@ -9,12 +9,13 @@ const pool = new Pool({
   database: process.env.database,
 });
 
-pool.connect((err) => {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log("Connected to Neon PostgreSQL database");
+(async function connectDB() {
+  try {
+    await pool.connect();
+    console.log("Connected to the database");
+  } catch (error) {
+    console.error("Error connecting to the database:", error);
   }
-});
+})();
 
 module.exports = pool;
