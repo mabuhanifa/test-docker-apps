@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 3000
 
-CMD [ "./node_modules/.bin/nodemon", "--config", "nodemon.json", "index.js" ]
+CMD [ "npm" ,"run", "dev"]
