@@ -12,7 +12,7 @@ const pool = new Pool({
 (async function connectDB() {
   try {
     await pool.connect();
-    console.log("Connected to the database");
+    console.log("Connected to the Postgres database");
   } catch (error) {
     console.error("Error connecting to the database:", error);
   }
