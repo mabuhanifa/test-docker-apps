@@ -1,17 +1,17 @@
 version: '3.8'
 services:
   db: 
-    container_name: postgres_container
+    container_name: postgres_container_next
     image: postgres
     restart: always
     environment:
       - POSTGRES_USER=root
       - POSTGRES_PASSWORD=root
-      - POSTGRES_DB=test_db
+      - POSTGRES_DB=next_prisma
     ports:
       - "5432:5432"
   pgAdmin:
-    container_name: pgAdmin4_container
+    container_name: pgAdmin4_container_next
     image: dpage/pgadmin4
     restart: always
     environment:
